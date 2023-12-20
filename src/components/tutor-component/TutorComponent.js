@@ -33,7 +33,7 @@ export default function TutorComponent(props) {
 
   const deleteTutor = async (id) => {
     try {
-      const deleteTutor = await fetch(`http://localhost:8000/tutors/${id}`, {
+      const deleteTutor = await fetch(`https://api-dacourse.vercel.app/tutors/${id}`, {
         method: "DELETE",
       });
       console.log(deleteTutor.status);

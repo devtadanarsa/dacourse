@@ -11,7 +11,7 @@ export default function AddContentComponent(props){
         const videoLink = document.getElementById('video-link').value;
 
         try{
-            const response = await fetch(`http://localhost:8000/lessons/${props.courseId}/content/${props.chapterId}`, {
+            const response = await fetch(`https://api-dacourse.vercel.app/lessons/${props.courseId}/content/${props.chapterId}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

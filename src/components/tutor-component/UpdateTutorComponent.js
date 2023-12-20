@@ -30,7 +30,7 @@ export default function UpdateTutorComponent({ tutor }) {
         video,
       };
       const response = await fetch(
-        `http://localhost:8000/tutors/${tutor.tutor_id}`,
+        `https://api-dacourse.vercel.app/tutors/${tutor.tutor_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
