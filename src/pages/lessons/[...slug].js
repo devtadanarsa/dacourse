@@ -10,7 +10,7 @@ export default function AcademiesPage(){
     const pathID = router.query.slug?.[0];
     const pathSubID = router.query.slug?.[2];
     const pathDetailID = router.query.slug?.[4];
-    const url = `https://api-dacourse.vercel.app/lessons/${pathID}/${pathSubID}`;
+    const url = `http://localhost:8000/lessons/${pathID}/${pathSubID}`;
   
     useEffect(() => {
       const fetchData = async () => {

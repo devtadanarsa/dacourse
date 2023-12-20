@@ -42,7 +42,7 @@ export default function AddTutorsComponent() {
         video,
         imageURL,
       };
-      const response = await fetch("https://api-dacourse.vercel.app/tutors", {
+      const response = await fetch("http://localhost:8000/tutors", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

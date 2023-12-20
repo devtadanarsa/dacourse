@@ -20,7 +20,7 @@ export default function AddCourse(){
 
     const handleAddCourse = async () => {
         try{
-            const response = await fetch("https://api-dacourse.vercel.app/lessons", {
+            const response = await fetch("http://localhost:8000/lessons", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

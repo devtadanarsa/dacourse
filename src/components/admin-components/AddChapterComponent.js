@@ -10,7 +10,7 @@ export default function AddChapterComponent(props){
         const chapterTitle = document.getElementById('chapter-title').value;
 
         try{
-            const response = await fetch(`https://api-dacourse.vercel.app/lessons/${props.courseId}`, {
+            const response = await fetch(`http://localhost:8000/lessons/${props.courseId}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

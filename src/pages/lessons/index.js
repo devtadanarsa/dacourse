@@ -6,7 +6,7 @@ import { courseList } from "@/data/constants"
 import { useState, useEffect } from "react"
 
 export default function LessonsPage(){
-    const url = "https://api-dacourse.vercel.app/lessons";
+    const url = "http://localhost:8000/lessons";
     const [course, setCourse] = useState([]);
 
     const fetchInfo = () => {

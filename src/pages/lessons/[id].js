@@ -17,7 +17,7 @@ export default function LessonDetail(){
         }
     }, [router.query.id]);
 
-    const url = `https://api-dacourse.vercel.app/lessons/${lessonId}`;
+    const url = `http://localhost:8000/lessons/${lessonId}`;
 
     const fetchInfo = () => {
         if(lessonId){

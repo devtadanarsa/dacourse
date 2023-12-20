@@ -9,7 +9,7 @@ export default function EditChapterComponent(props){
     const handleEditChapter = async (onClose) => {
         const chapterTitle = document.getElementById('chapter-title').value;
         try{
-            const response = await fetch(`https://api-dacourse.vercel.app/lessons/${props.courseId}/${props.chapterId}`, {
+            const response = await fetch(`http://localhost:8000/lessons/${props.courseId}/${props.chapterId}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
