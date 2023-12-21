@@ -33,7 +33,7 @@ export default function TutorComponent(props) {
 
   const deleteTutor = async (id) => {
     try {
-      const deleteTutor = await fetch(`http://localhost:8000/tutors/${id}`, {
+      const deleteTutor = await fetch(`https://api-dacourse.vercel.app/tutors/${id}`, {
         method: "DELETE",
       });
       console.log(deleteTutor.status);
@@ -98,7 +98,7 @@ export default function TutorComponent(props) {
         </div>
         <div className="font-semibold bottom-0 relative mt-28 ">
           <Button className="h-[50px] w-[220px] bg-[#FB9C46] text-white">
-            Book Trial Lessons
+            <a  href="https://api.whatsapp.com/send?phone=6287785533382">Book Trial Lessons</a>
           </Button>
           <br />
           <div className="flex">
