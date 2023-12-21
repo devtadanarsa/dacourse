@@ -5,7 +5,7 @@ import { faPlus, faPen, faTrash } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function AdminPage(){
-    const url = "http://localhost:8000/lessons";
+    const url = "https://api-dacourse.vercel.app/lessons";
     const [course, setCourse] = useState([]);
 
     const fetchInfo = () => {

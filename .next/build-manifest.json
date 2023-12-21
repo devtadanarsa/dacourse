@@ -27,10 +27,30 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/about": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/about.js"
+    ],
+    "/admin/course/[id]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/admin/course/[id].js"
+    ],
+    "/admin/tutors": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/admin/tutors.js"
+    ],
     "/lessons": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/lessons.js"
+    ],
+    "/tutors": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/tutors.js"
     ]
   },
   "ampFirstPages": []

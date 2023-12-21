@@ -26,8 +26,8 @@ export default function EditCourse(){
         }
     }, [router.query.id]);
     
-    const url = `http://localhost:8000/lessons/${courseId}`;
-    const chapterUrl = `http://localhost:8000/lessons/${courseId}/1`;
+    const url = `https://api-dacourse.vercel.app/lessons/${courseId}`;
+    const chapterUrl = `https://api-dacourse.vercel.app/lessons/${courseId}/1`;
 
     const fetchInfo = () => {
         if(courseId){
@@ -84,7 +84,7 @@ export default function EditCourse(){
 
     const handleDeleteChapter = async (chapterId) => {
         try{
-            const response = await fetch(`http://localhost:8000/lessons/${courseId}/chapter/${chapterId}`,{
+            const response = await fetch(`https://api-dacourse.vercel.app/lessons/${courseId}/chapter/${chapterId}`,{
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -105,7 +105,7 @@ export default function EditCourse(){
 
     const handleDeleteContent = async (contentId) => {
         try{
-            const response = await fetch(`http://localhost:8000/lessons/${courseId}/content/${contentId}`, {
+            const response = await fetch(`https://api-dacourse.vercel.app/lessons/${courseId}/content/${contentId}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
